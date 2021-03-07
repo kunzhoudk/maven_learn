@@ -4,7 +4,7 @@
 
     <groupId>com.apress.gswmbook</groupId>
     <artifactId>gswm</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <name>Getting Started with Maven</name>
@@ -40,11 +40,6 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>com.google.ortools</groupId>
-            <artifactId>ortools-java</artifactId>
-            <version>8.1.8487</version>
-        </dependency>
     </dependencies>
     <distributionManagement>
         <repository>
@@ -60,6 +55,13 @@
             </url>
         </snapshotRepository>
     </distributionManagement>
+
+    <scm>
+        <connection>scm:git:https://github.com/kunzhoudk/maven_learn.git</connection>
+        <url>https://github.com/kunzhoudk/maven_learn</url>
+        <developerConnection>scm:git:https://github.com/kunzhoudk/maven_learn.git</developerConnection>
+    </scm>
+
     <build>
         <plugins>
             <plugin>
